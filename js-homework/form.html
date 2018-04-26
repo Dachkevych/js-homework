@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Order car</title>
+ </head> 
+ <body>
+<form action="success.html" align="center" method="posts">
+    <h2 align="center">Order form</h2>
+  <fieldset >
+      <legend><h3>INFO</h3></legend>
+      <label for="first_name">First name</label>
+        <input id="first_name" required ><br><hr>
+      <label for="last_name">Last name</label>
+        <input id="last_  name" required ><br><hr>
+      <label for="phone">Phone number</label>
+        <input id="phone" type="tel" min="10" max="13"><br><hr>
+      <label for="adress">Adress</label>
+        <input id="adress"><br><hr>
+      <label for="email">Email</label>
+        <input type="email" id="email"><br><hr>
+      <label for="age">Age</label>
+        <input id="age" type="date">
+        <input type="radio" id="woman" name="gender">Woman
+        <input type="radio" id="man" name="gender">Man<br><hr>
+     <label for="file">Add documents</label>
+      <input type="file" id="file" name="file" required >
+  </fieldset>
+
+  <fieldset>
+      <legend><h3>OPTIONS</h3></legend>
+      <label for="model">Model</label>
+      <select id="model">
+        <option>1.2 TSI BlueMotion</option>
+        <option>1.0 TSI BlueMotion</option>
+        <option>1.4 TSI BlueMotion</option>
+        <option>1.6 TDI BlueMotion</option>
+        <option>2.0 TDI BlueMotion</option>
+      </select><br/><hr/>
+       <label for="displacement	">Displacement </label>
+       <select id="displacement	">
+        <option>1,197 cc (73 cu in)</option>
+        <option>1,598 cc (98 cu in)</option>
+        <option>1,390 cc (85 cu in)</option>
+        <option>1,798 cc (110 cu in)</option>
+        <option>1,598 cc (98 cu in)</option>
+      </select><br/><hr/>
+       <label for="power">Power </label>
+       <select id="power">
+        <option>85 PS (63 kW; 84 hp) at 4,300–5,300 rpm</option>
+        <option>105 PS (77 kW; 104 hp) at 5,000 rpm</option>
+        <option>110 PS (81 kW; 108 hp) at 5,800 rpm</option>
+        <option>115 PS (85 kW; 113 hp) at 5,000-5,500 rpm	</option>
+        <option>140 PS (103 kW; 138 hp) at 4,500–6,000 rpm</option>
+      </select><br/><hr/>
+       <label for="transmission">Transmission </label>
+       <select id="transmission">
+        <option>5-speed manual</option>
+        <option>6-speed manual</option>
+        <option>7-speed DSG (optional)	</option>
+      </select><br/><hr/>
+        <label><input id="wheel" type="checkbox">Titanium disks</label>
+        <label><input id="seats" type="checkbox">Leather seats</label>
+        <label><input id="condition" type="checkbox">Air conditioning</label>
+        <label><input id="alarms" type="checkbox">Alarms</label>
+        <p><textarea rows="10" cols="100" name="text" placeholder="COMMENTS"></textarea></p>
+  </fieldset>
+    <button type="submit" style="background-color: forestgreen">Submit</button>
+    <button type="reset" style="background-color: crimson">Reset</button>
+</form>
+ </body>
+</html>
