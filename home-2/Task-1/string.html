@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Capitalize</title>
+</head>
+
+<body>
+    <script>
+        truncate("EPAM Lviv", 4);
+        find_letter_a("Назва Львів дана місту на честь князя Лева Даниловича, сина засновника Львова Данила Галицького.");
+        delete_word("xxxx,polityka Good job polityka, xxxx");
+        print_only_num("іва 24 уц ац34434ауку");
+        // 1. Написати функцію, скорочує строку і додає три крапки 
+        function truncate(str, maxlength) {
+            console.log("Task-1 - " + str.substring(0, maxlength).concat("..."));
+        }
+        // truncate("рудщ ві віав",3) = "руд..."
+        // 2. Знайти кількість букв "а" в речені "Назва Львів дана місту на честь князя Лева Даниловича, сина засновника Львова Данила Галицького." використовуючи indexOf
+        function find_letter_a(str) {
+            var count = 0;
+            var pos = str.indexOf("а");
+            while (pos != -1) {
+                pos = str.indexOf("а", pos + 1);
+                count++;
+            }
+            console.log("Task-2 - " + count);
+        }
+        // 3. Написати функцію, яка буде фільтрувати рядок і видиляти слова "xxxx" i "polityka"
+        function delete_word(str) {
+            console.log("Task-3 - " + str.replace(/xxxx/g, '').replace(/polityka/g, ''));
+        }
+        // 4. Профільтрувати строку "іва 24 уц ац34434ауку" і виветси тільки цифри
+        function print_only_num(str) {
+            console.log("Task-4 - " + str.replace(/[^0-9]/g, ''));
+        }
+
+    </script>
+</body>
+
+</html>

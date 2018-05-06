@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Homework-2</title>
+    <script src="script(tasks 1-30).js"></script>
+</head>
+<body>
+    <div>
+        <p>Write a JavaScript program to display the current day and time in the following format Sample Output : Today is : Friday. Current time is : 4 PM : 50 : 22</p>
+        <script>
+            printCurrentTime();
+        </script>
+        <hr/>
+    </div>
+    <div>
+        <p>Write a JavaScript program to print the contents of the current window</p>
+        <button onclick="printCurrentWindow()">Print window</button>
+        <hr/>
+    </div>
+    <div>
+        <p>Write a JavaScript program to get the current date. mm-dd-yyyy, mm/dd/yyyy or dd-mm-yyyy, dd/mm/yyyy</p>
+        <script>
+            formatDate();
+        </script>
+    </div>
+    <div>
+        <p>Write a JavaScript program to find the area of a triangle where lengths of the three of its sides are 5, 6, 7</p>
+        <script>
+            findTriangleArea();
+        </script>
+    </div>
+    <div>
+        <p>Write a JavaScript program to determine whether a given year is a leap year in the Gregorian calendar</p>
+        <form>
+            <input type="text" id="leapYear">
+            <input type="button" id="btn" value="Press">
+        </form>
+        <script>
+            document.getElementById("btn").onclick = determineLeapYear;
+        </script><br/>
+        <hr/>
+    </div>
+    <div>
+        <p>Write a JavaScript program to find 1st January is being a Sunday between 2014 and 2050</p>
+        <script>
+            findFirstJanuaryIsMonday();
+        </script><br/>
+        <hr/>
+    </div>
+    <div>
+        <p>Write a JavaScript program where the program takes a random integer between 1 to 10, the user is then prompted to input a guess number. If the user input matches with guess number, the program will display a message "Good Work" otherwise display a message "Not matched"</p>
+        <form>
+            <input type="text" id="userNumber" placeholder="Enter number from 1 to 10">
+            <input type="button" id="btnNumber" value="Game">
+        </form>
+        <script>
+            document.getElementById("btnNumber").onclick = playGame;
+        </script>
+        <hr/>
+    </div>
+    <div>
+        <p>Write a JavaScript program to calculate days left until next Christmas</p>
+        <button onclick="calcDaysToChristmas()">Calculate days</button>
+        <hr/>
+    </div>
+    <div>
+        <p>Write a JavaScript program to calculate multiplication and division of two numbers (input from user)</p>
+        <form>
+            1st number: <input type="text" id="firstNumber"><br/> 2st number: <input type="text" id="secondNumber"><br/>
+            <input type="button" onclick="multiply()" value="Multiply">
+            <input type="button" onclick="divide()" value="Divide">
+        </form>
+        <p>Result is:<br>
+            <span id="result"></span>
+        </p>
+        <hr/>
+    </div>
+    <div>
+        <p>Write a JavaScript program to convert temperatures to and from Celsius, Fahrenheit</p>
+        <form>
+            <input type="text" id="userTemperatures" placeholder="C">
+            <input type="button" onclick="convertCtoF()" value="C to F">
+            <input type="button" onclick="convertFtoC()" value="F to C">
+        </form>
+        <p>Result is: <span class="temp" id="resultTemp"></span></p>
+        <hr/>
+    </div>
+    <div>
+        <p>Write a JavaScript program to get the website URL (loading page)</p>
+        <input type="button" onclick="getURL()" value="Get URL">
+        <hr/>
+    </div>
+    <div>
+        <p>Write a JavaScript exercise to get the extension of a filename</p>
+        <form>
+            <input type="text" id="userFileName" placeholder="File name">
+            <input type="button" onclick="getExtension()" value="Get extension">
+        </form>
+        <p>File extension is: <span id="fileExtension"></span></p>
+        <hr/>
+    </div>
+    <div>
+        <p> Write a JavaScript program to get the difference between a given number and 13, if the number is greater than 13 return double the absolute difference</p>
+        <form>
+            <input type="text" id="difference" placeholder="Enter number">
+            <input type="button" onclick="findDifference()" value="Calculate">
+        </form>
+        <p>Result is: <span id="resultCalc"></span></p>
+        <hr/>
+    </div>
+    <div>
+        <p>Write a JavaScript program to compute the sum of the two given integers. If the two values are same, then returns triple their sum</p>
+        <form>
+            <input type="text" id="firstNum" placeholder="Enter first number">
+            <input type="text" id="secondNum" placeholder="Enter second number">
+            <input type="button" onclick="sumDoubleNum()" value="Calculate">
+        </form>
+        <p>Result is: <span id="sumResult"></span></p>
+        <hr/>
+    </div>
+    <div>
+        <p>Write a JavaScript program to compute the absolute difference between a specified number and 19. Returns triple their absolute difference if the specified number is greater than 19</p>
+        <form>
+            <input type="text" id="user_number" placeholder="Enter number">
+            <input type="button" onclick="findDifference_2()" value="Calculate">
+        </form>
+        <p>Result is: <span id="result_dif"></span></p>
+        <hr/>
+    </div>
+    <div>
+        <p>Write a JavaScript program to check two given numbers and return true if one of the number is 50 or if their sum is 50</p>
+        <script>
+            document.write(compareNumber(26, 24))
+            document.write(compareNumber(50, 40))
+            document.write(compareNumber(32, 55))
+        </script>
+        <hr/>
+    </div>
+    <div>
+        <p> Write a JavaScript program to check from two given integers, if one is positive and one is negative</p>
+        <form>
+            <input type="text" id="first_number" placeholder="Enter first number">
+            <input type="text" id="second_number" placeholder="Enter second number">
+            <input type="button" onclick="positive_negative_num()" value="Calculate">
+        </form>
+        <p>Result is: <span id="result_compare"></span></p>
+        <hr/>
+    </div>
+    <div>
+        <p>Write a JavaScript program to create a new string adding "Py" in front of a given string. If the given string begins with "Py" then return the original string</p>
+        <form>
+            <input type="text" id="user_word" placeholder="Enter word">
+            <input type="button" onclick="add_Py_to_word()" value="Calculate">
+        </form>
+        <p>Result is: <span id="result_word"></span></p>
+        <hr/>
+    </div>
+    <div>
+        <p>Write a JavaScript program to remove a character at the specified position of a given string and return the new string</p>
+        <form>
+            <input type="text" id="sentence" placeholder="Sentence">
+            <input type="text" id="first_index" placeholder="From index">
+            <input type="text" id="second_index" placeholder="To index includ">
+            <input type="button" onclick="changeSentence()" value="Change">
+        </form>
+        <p>Result is: <span id="sent_changed"></span></p>
+        <hr/>
+    </div>
+    <div>
+        <p>Write a JavaScript program to create a new string from a given string changing the position of first and last characters. The string length must be greater than or equal to 1</p>
+        <form>
+            <input type="text" id="sentence_2" placeholder="Enter sentence">
+            <input type="button" onclick="change_letter()" value="Change">
+        </form>
+        <p>Result is: <span id="result_sentences"></span></p>
+        <hr/>
+    </div>
+    <div>
+        <p><b>24</b> Write a JavaScript program to create a new string from a given string with the first character of the given string added at the front and back</p>
+        <form>
+            <input type="text" id="sentence_3" placeholder="Enter sentence">
+            <input type="button" onclick="add_letter()" value="Add">
+        </form>
+        <p>Result is: <span id="result_sentences_3"></span></p>
+        <hr/>
+    </div>
+    <div>
+        <p>Write a JavaScript program check if a given positive number is a multiple of 3 or a multiple of 7</p>
+        <form>
+            <input type="text" id="users_num_1" placeholder="Enter number">
+            <input type="button" onclick="checkNumver()" value="Check">
+        </form>
+        <p>Result is: <span id="check_result"></span></p>
+        <hr/>
+    </div>
+    <div>
+        <p> Write a JavaScript program to create a new string from a given string taking the last 3 characters and added at both the front and back. The string length must be 3 or more</p>
+        <form>
+            <input type="text" id="sentence_4" placeholder="Enter sentence">
+            <input type="button" onclick="add_three_letter()" value="Add">
+        </form>
+        <p>Result is: <span id="result_sentences_4"></span></p>
+        <hr/>
+    </div>
+    <div>
+        <p>Write a JavaScript program to check if a string starts with 'Java' and false otherwise</p>
+        <form>
+            <input type="text" id="sentence_5" placeholder="Enter sentence">
+            <input type="button" onclick="check_java()" value="Check">
+        </form>
+        <p>Result is: <span id="result_sentences_5"></span></p>
+        <hr/>
+    </div>
+    <div>
+        <p>Write a JavaScript program to check if two given integer values are in the range 50..99 (inclusive). Return true if either of them are in the said range</p>
+        <form>
+            <input type="text" id="number_one" placeholder="Enter number">
+            <input type="text" id="number_two" placeholder="Enter number">
+            <input type="button" onclick="check_numbers()" value="Check">
+        </form>
+        <p>Result is: <span id="result_number"></span></p>
+        <hr/>
+    </div>
+    <div>
+        <p>Write a JavaScript program to check if a string "Script" presents at 5th (index 4) position in a given string, if "Script" presents in the string return the string without "Script" otherwise return the original one</p>
+        <form>
+            <input type="text" id="sentence_6" placeholder="Enter sentence">
+            <input type="button" onclick="check_script()" value="Check">
+        </form>
+        <p>Result is: <span id="result_sentences_6"></span></p>
+        <hr/>
+    </div>
+</body>
+</html>
