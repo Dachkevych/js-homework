@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>JS Homework 2: querySelector, date, timeout</title>
+</head>
+
+<body>
+    <!-- Task 1  -->
+    <h1>Wether in Ukraine</h1>
+    <ul>
+        <li>Lviv - <span class="temperature">null</span></li>
+        <li>Kiev - <span class="temperature">null</span></li>
+        <li>Dnipro - <span class="temperature">null</span></li>
+        <li>Uzhorod - <span class="temperature">null</span></li>
+        <li>Gorodok - <span class="temperature">null</span></li>
+    </ul>
+    <script>
+        // Є обєкт за даними 
+        var wetherObj = {
+            Lviv: 12
+            , Kiev: 20
+            , Dnipro: 22
+            , Uzhorod: 19
+            , Gorodok: 14
+        }
+        addWeather();
+
+        function addWeather() {
+            var className = document.getElementsByClassName('temperature');
+            for (var i = 0; i < className.length; i++) {
+                var city = className[i].parentElement.innerHTML;
+                var town = city.substring(0, city.indexOf('-')).trim();
+                if (town == 'Lviv') {
+                    className[i].innerHTML = wetherObj.Lviv;
+                }
+                else if (town == 'Kiev') {
+                    className[i].innerHTML = wetherObj.Kiev;
+                }
+                else if (town == 'Dnipro') {
+                    className[i].innerHTML = wetherObj.Dnipro;
+                }
+                else if (town == 'Uzhorod') {
+                    className[i].innerHTML = wetherObj.Uzhorod;
+                }
+                else if (town == 'Gorodok') {
+                    className[i].innerHTML = wetherObj.Gorodok;
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
