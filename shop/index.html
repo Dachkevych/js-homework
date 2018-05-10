@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/script.js"></script>
+    <title>Shop</title>
+</head>
+
+<body>
+    <div class="products">
+        <div class="first">
+            <div class="product">
+                <div class="image"><img src="http://ishop-retail.com.opt-images.1c-bitrix-cdn.ru/upload/resize_cache/iblock/598/256_256_0/5980721e110a60180efa5620c6dd6ebd.jpg?147728519016227"></div>
+                <p class="p_title">Iphone 7</p> <span class="p_price">700$</span>
+                <button class="buy" onclick="addToCart(event)">Buy</button>
+            </div>
+            <div class="product">
+                <div class="image"><img src="http://khujand-city.tj/upload/000/u0/000/a8dfc2c9.jpg"></div>
+                <p class="p_title">Iphone 6s</p> <span class="p_price">400$</span>
+                <button class="buy" onclick="addToCart(event)">Buy</button>
+            </div>
+            <div class="product">
+                <div class="image"><img src="https://shop.gadgetufa.ru/images/upload/37555-smartfon-apple-iphone-8-plus-64-silver_thumb256.jpg"></div>
+                <p class="p_title">Iphone 8</p> <span class="p_price">900$</span>
+                <button class="buy" onclick="addToCart(event)">Buy</button>
+            </div>
+        </div>
+        <div class="second">
+            <div class="product">
+                <div class="image"><img src="https://shop.gadgetufa.ru/images/upload/37555-smartfon-apple-iphone-8-plus-64-silver_thumb256.jpg"></div>
+                <p class="p_title">Iphone 8</p> <span class="p_price">900$</span>
+                <button class="buy" onclick="addToCart(event)">Buy</button>
+            </div>
+            <div class="product">
+                <div class="image"><img src="https://service.gadgetufa.ru/images/upload/products_iphone-7-plus_3967_thumb256.jpg"></div>
+                <p class="p_title">Iphone 7plus</p> <span class="p_price">800$</span>
+                <button class="buy" onclick="addToCart(event)">Buy</button>
+            </div>
+            <div class="product">
+                <div class="image"><img src="https://shop.gadgetufa.ru/images/upload/products_5-5s_thumb256.jpg"></div>
+                <p class="p_title">Iphone 5</p> <span class="p_price">250$</span>
+                <button class="buy" onclick="addToCart(event)">Buy</button>
+            </div>
+        </div>
+        <div class="third">
+            <div class="product">
+                <div class="image"><img src="http://ishop-retail.com.opt-images.1c-bitrix-cdn.ru/upload/resize_cache/iblock/387/256_256_0/3875dd8fa87b3e9279d782a166f75847.jpg?149438660824613"></div>
+                <p class="p_title">Iphone SE</p> <span class="p_price">300$</span>
+                <button class="buy" onclick="addToCart(event)">Buy</button>
+            </div>
+            <div class="product">
+                <div class="image"><img src="https://shop.gadgetufa.ru/images/upload/37555-smartfon-apple-iphone-8-plus-64-silver_thumb256.jpg"></div>
+                <p class="p_title">Iphone 8</p> <span class="p_price">1000$</span>
+                <button class="buy" onclick="addToCart(event)">Buy</button>
+            </div>
+            <div class="product">
+                <div class="image"><img src="https://shop.gadgetufa.ru/images/upload/37562-iphone-x-64gb-space-gray_thumb256.jpg"></div>
+                <p class="p_title">Iphone X</p> <span class="p_price">1800$</span>
+                <button class="buy" onclick="addToCart(event)">Buy</button>
+            </div>
+        </div>
+    </div>
+    <div class="cart">
+        <div class="cart_header">
+            <h2>Cart</h2> <span class="c_name">Назва</span><span class="c_price">Ціна</span> </div>
+        <div class="items"></div>
+        <div class="sum"></div> <span class="c_sum">No items</span>
+        <div class="c_footer">
+            <button onclick="removeAll()">Clean</button>
+            <a href="form.html">
+                <button class="cart_buy" onclick="href='form.html'">Buy</button>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>

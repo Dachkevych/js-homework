@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/form_style.css">
+    <script src="js/script.js"></script>
+    <title>Form</title>
+</head>
+
+<body>
+    <form action="#" id='send' method='POST'>
+        <fieldset>
+            <label>Ім'я</label>
+            <input type='text' name='name' placeholder="Ім'я" required><span></span>
+            <br>
+            <label>Прізвище</label>
+            <input type='text' name='surname' placeholder='Прізвище' required><span></span>
+            <br>
+            <label>Місто</label>
+            <input type='text' name='city' placeholder='Місто' required><span></span>
+            <br>
+            <label>Вулиця</label>
+            <input type='text' name='street' placeholder='Вулиця' required><span></span>
+            <br>
+            <label>Номер</label>
+            <input type='text' name='number' placeholder='Номер картки' required><span></span>
+            <br> </fieldset>
+        <fieldset>
+            <label>Ел. пошта</label>
+            <input type='email' name='email' placeholder='Ел. пошта' required><span></span>
+            <br> </fieldset>
+        <fieldset>
+            <p>Введіть число з картинки</p> <img src="https://c22blog.files.wordpress.com/2010/10/input-black.gif">
+            <input type='text' name='capcha' placeholder='число' required><span></span> </fieldset>
+    </form>
+    <div class="sum">
+        <input type="submit" value="Зарегестрироваться" form='send' onclick="confirm()"> </div>
+</body>
+
+</html>
