@@ -1,0 +1,71 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>JS Homework 2: querySelector, date, timeout</title>
+</head>
+
+<body>
+    <!-- Task 2  -->
+    <h1>World time</h1>
+    <ul>
+        <li data-location="london">London - <span class="time">null</span></li>
+        <li data-location="kiev">Kiev - <span class="time">null</span></li>
+        <li data-location="warshawa">Warshawa - <span class="time">null</span></li>
+        <li data-location="los angeles">Los Angeles - <span class="time">null</span></li>
+        <li data-location="new york">New York - <span class="time">null</span></li>
+    </ul>
+    <script>
+        // вивести для кожного міста час і дату
+        // формат 24.09.2017 - 15:40
+        var LONDON_OFFSET = 1
+            , KIEV_OFFSET = 3
+            , WARSHAWA_OFFSET = 2
+            , LOS_ANGELES_OFFSET = -7
+            , NEW_YORK_OFFSET = -4;
+        addTime();
+
+        function addTime() {
+            var classname = document.getElementsByClassName('time');
+            for (var i = 0; i < classname.length; i++) {
+                var city = classname[i].parentElement.getAttribute('data-location');
+                if (city == 'london') {
+                    classname[i].innerHTML = time(LONDON_OFFSET);
+                }
+                else if (city == 'kiev') {
+                    classname[i].innerHTML = time(KIEV_OFFSET);
+                }
+                else if (city == 'warshawa') {
+                    classname[i].innerHTML = time(WARSHAWA_OFFSET);
+                }
+                else if (city == 'los angeles') {
+                    classname[i].innerHTML = time(LOS_ANGELES_OFFSET);
+                }
+                else if (city == 'new york') {
+                    classname[i].innerHTML = time(NEW_YORK_OFFSET);
+                }
+            }
+        }
+
+        function time(offset) {
+            var date = new Date();
+            var year = date.getFullYear()
+                , month = check(date.getUTCMonth() + 1)
+                , day = check(date.getUTCDate())
+                , hour = date.getUTCHours() + offset
+                , minutes = date.getUTCMinutes()
+                , second = date.getUTCSeconds();
+            var time = day + "." + month + "." + year + " - " + hour + ":" + minutes;
+            return time;
+        }
+
+        function check(num) {
+            if (num < 10) {
+                num = 0 + "" + num;
+            }
+            return num;
+        }
+    </script>
+</body>
+
+</html>
