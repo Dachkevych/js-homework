@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
+<<<<<<< HEAD
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="bookmarks.js"></script>
     <title>JS Bin</title>
@@ -16,11 +17,40 @@
         <input type="text" id="title" placeholder="Title"/>
         <input type="text" id="url" placeholder="URL" />
         <button type="submit" onclick="addBookmark(13)">Save</button>
+=======
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="bookmarks.js">
+    </script>
+    <style>
+        .linkUrl {
+            display: flex;
+        }
+    </style>
+    <title>JS Bin</title>
+</head>
+
+<body onload="renderBookmarkList()">
+    <h2>Add new bookmarks</h2>
+    <!-- Форма для зберігання закладки -->
+    <label>
+        <input type="text" id="title" placeholder="Title" />
+        <input type="text" id="url" placeholder="URL" />
+        <button type="submit" onclick="addBookmark()">Save</button>
+>>>>>>> 1976ce0f7e0b4326161052a1ed3ead040dd90953
     </label>
     <!-- Список збережених закладок -->
     <h2>Your bookmarks</h2>
     <div class="bookmark-list">
+<<<<<<< HEAD
         <!-- Виводити як лінки, при кліки відкривати в новій вкладці --><a class="linkUrl" id="1" href="#url" target="_blank">Title</a> </div>
 </body>
 
 </html>
+=======
+        <p id="info"></p>
+        <!-- Виводити як лінки, при кліки відкривати в новій вкладці --><a class="linkUrl" id="1" href="#url" target="_blank">Title</a> </div>
+</body>
+
+</html>
+>>>>>>> 1976ce0f7e0b4326161052a1ed3ead040dd90953
