@@ -1,0 +1,56 @@
+body {
+    background-image: url(img/dozhd_okno_steklo_zdaniya_kapli_109669_1920x1080.jpg);
+}
+
+.container {
+    border: 1px solid silver;
+    border-radius: 20px;
+    width: 400px;
+}
+
+#rowDiv {
+    margin: auto;
+    text-align: center;
+    width: 300px;
+}
+
+.btn-link{
+    color: black;
+    text-decoration: none;
+}
+
+input[type="text"] {
+    height: 40px;
+    font-size: 20px;
+}
+
+#submitWeather {
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.text-primary{
+    text-decoration-color: black;
+}
+
+#show {
+    margin: auto;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: dimgrey;
+    border-color: dimgrey;
+}
+
+.name {
+    display: flex;
+    padding: 0 0 0 20px;
+    font-size: 25px;
+    border-bottom: 1px solid silver;
+}
+
+h3 {
+    text-decoration-color: aqua;
+}
